@@ -76,9 +76,10 @@ export default function MenuPage() {
       {/* Menu Area */}
       <div className="flex-1 space-y-8">
         <div className="flex flex-col md:flex-row gap-4 items-end md:items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-serif font-bold">{t('menu')}</h1>
-            <p className="text-muted-foreground">Discover our authentic dishes.</p>
+          <div className="space-y-2">
+            <span className="text-primary font-bold tracking-widest text-sm uppercase">Our Menu</span>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">Culinary Traditions</h1>
+            <p className="text-muted-foreground text-lg">Discover our authentic, premium dishes crafted with rich Yemeni spices.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
             <div className="relative">
@@ -110,11 +111,11 @@ export default function MenuPage() {
               </div>
               <div className="p-4 flex-1 flex flex-col">
                 <div className="flex justify-between items-start gap-2 mb-2">
-                  <h3 className="font-semibold text-lg leading-tight">{item.name}</h3>
-                  <span className="font-bold text-primary shrink-0">RM {item.price.toFixed(2)}</span>
+                  <h3 className="font-serif font-bold text-xl leading-tight">{item.name}</h3>
+                  <span className="font-bold text-primary shrink-0 text-lg">RM {item.price.toFixed(2)}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4 flex-1">{item.description}</p>
-                <Button className="w-full mt-auto" onClick={() => addToCart(item)}>
+                <p className="text-sm text-muted-foreground mb-6 flex-1 leading-relaxed">{item.description}</p>
+                <Button className="w-full mt-auto rounded-full hover:scale-105 transition-transform" onClick={() => addToCart(item)}>
                   Add to Cart
                 </Button>
               </div>

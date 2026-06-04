@@ -49,9 +49,10 @@ export default function TrackOrder() {
 
   return (
     <div className="max-w-3xl mx-auto space-y-8 py-8">
-      <div className="text-center space-y-2">
-        <h1 className="text-4xl font-serif font-bold">{t('track_order')}</h1>
-        <p className="text-muted-foreground">Follow your delivery in real-time.</p>
+      <div className="text-center space-y-4 pt-12 pb-8">
+        <span className="text-primary font-bold tracking-widest text-sm uppercase">Live Updates</span>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">Track Your Order</h1>
+        <p className="text-muted-foreground text-lg max-w-lg mx-auto">Follow your premium delivery in real-time from our kitchen to your doorstep.</p>
       </div>
 
       <Card className="p-2 pl-4 max-w-xl mx-auto flex items-center border-primary/20 bg-primary/5">

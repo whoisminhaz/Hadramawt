@@ -22,18 +22,18 @@ function Navbar() {
   }, [dark]);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-6">
-          <Link to="/" className="text-xl font-serif font-bold text-primary flex items-center gap-2">
-            <img src="./assets/logo.png" alt="Logo" className="w-8 h-8 rounded-full bg-primary/20 object-cover hidden sm:block" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+    <nav className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 shadow-sm">
+      <div className="container mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+        <div className="flex items-center gap-8">
+          <Link to="/" className="text-2xl font-serif font-bold text-primary flex items-center gap-3 tracking-wide">
+            <img src="./assets/logo.png" alt="Logo" className="w-10 h-10 rounded-full bg-primary/10 object-cover hidden sm:block border border-primary/20" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             Hadramawt
           </Link>
-          <div className="hidden md:flex gap-4">
-            <Link to="/" className="text-sm font-medium hover:text-primary">{t('home')}</Link>
-            <Link to="/menu" className="text-sm font-medium hover:text-primary">{t('menu')}</Link>
-            <Link to="/reservation" className="text-sm font-medium hover:text-primary">{t('reservations')}</Link>
-            <Link to="/track" className="text-sm font-medium hover:text-primary">{t('track_order')}</Link>
+          <div className="hidden md:flex gap-6">
+            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('home')}</Link>
+            <Link to="/menu" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('menu')}</Link>
+            <Link to="/reservation" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('reservations')}</Link>
+            <Link to="/track" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('track_order')}</Link>
           </div>
         </div>
 
@@ -97,7 +97,7 @@ export default function App() {
       <Router>
         <div className="min-h-screen flex flex-col font-sans selection:bg-primary/20">
           <Navbar />
-          <main className="flex-1 w-full max-w-7xl mx-auto p-4 md:p-8">
+          <main className="flex-1 w-full mx-auto">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/menu" element={<MenuPage />} />
@@ -106,9 +106,35 @@ export default function App() {
               <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </main>
-          <footer className="border-t py-8 mt-12 bg-muted/40">
-            <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Restoran Hadramawt. All rights reserved.
+          <footer className="bg-foreground text-background py-16 mt-0">
+            <div className="container mx-auto px-6 lg:px-12 grid md:grid-cols-4 gap-12">
+              <div className="space-y-4 md:col-span-2">
+                <h3 className="text-2xl font-serif font-bold text-primary">Restoran Hadramawt</h3>
+                <p className="text-background/70 max-w-sm leading-relaxed">
+                  A premium dining destination in Kuala Lumpur offering authentic Middle Eastern cuisine, rich Yemeni flavors, and an unforgettable atmosphere.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h4 className="font-bold tracking-widest text-sm uppercase text-primary">Explore</h4>
+                <div className="flex flex-col gap-2 text-background/80">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                  <Link to="/menu" className="hover:text-primary transition-colors">Our Menu</Link>
+                  <Link to="/reservation" className="hover:text-primary transition-colors">Reservations</Link>
+                  <Link to="/track" className="hover:text-primary transition-colors">Track Order</Link>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h4 className="font-bold tracking-widest text-sm uppercase text-primary">Contact</h4>
+                <div className="flex flex-col gap-2 text-background/80 text-sm">
+                  <p>294, Jln Ampang, KL</p>
+                  <p>+60 3-4256 0678</p>
+                  <p>Open Daily: 11AM - 2AM</p>
+                </div>
+              </div>
+            </div>
+            <div className="container mx-auto px-6 lg:px-12 mt-12 pt-8 border-t border-background/10 text-center text-sm text-background/50 flex flex-col md:flex-row justify-between items-center gap-4">
+              <span>© {new Date().getFullYear()} Restoran Hadramawt. All rights reserved.</span>
+              <span>Made with ❤️ in Kuala Lumpur</span>
             </div>
           </footer>
         </div>

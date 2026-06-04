@@ -50,12 +50,13 @@ export default function Reservation() {
 
   return (
     <div className="max-w-2xl mx-auto space-y-8">
-      <div className="text-center space-y-2">
-        <h1 className="text-4xl font-serif font-bold">{t('reservations')}</h1>
-        <p className="text-muted-foreground">Reserve your table online in real-time.</p>
+      <div className="text-center space-y-4 pt-12 pb-8">
+        <span className="text-primary font-bold tracking-widest text-sm uppercase">Secure Your Spot</span>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">Reserve a Table</h1>
+        <p className="text-muted-foreground text-lg max-w-lg mx-auto">Experience the finest Middle Eastern hospitality. Reserve your table online for an unforgettable dining experience.</p>
       </div>
 
-      <Card className="p-6 md:p-8">
+      <Card className="p-8 md:p-12 shadow-2xl border-none bg-card/50 backdrop-blur-sm">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
