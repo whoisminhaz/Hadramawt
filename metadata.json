@@ -1,0 +1,6 @@
+{
+  "name": "Restoran Hadramawt",
+  "description": "Professional website for Restoran Hadramawt with reservations, dynamic menu, and dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
