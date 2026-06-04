@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router';
 import { LanguageProvider, useLanguage } from './lib/LanguageContext';
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Menu as MenuIcon, X } from 'lucide-react';
@@ -26,7 +26,7 @@ function Navbar() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="text-xl font-serif font-bold text-primary flex items-center gap-2">
-            <img src="/assets/logo.png" alt="Logo" className="w-8 h-8 rounded-full bg-primary/20 object-cover hidden sm:block" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+            <img src="./assets/logo.png" alt="Logo" className="w-8 h-8 rounded-full bg-primary/20 object-cover hidden sm:block" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             Hadramawt
           </Link>
           <div className="hidden md:flex gap-4">
