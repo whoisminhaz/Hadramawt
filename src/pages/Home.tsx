@@ -40,7 +40,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 1 }}
             className="text-primary tracking-widest text-sm font-bold uppercase drop-shadow-md"
           >
-            Kuala Lumpur, Malaysia
+            Kedah, Malaysia
           </motion.span>
           <motion.h1 
             initial="hidden" animate="visible" variants={fadeIn}
@@ -52,7 +52,7 @@ export default function Home() {
             initial="hidden" animate="visible" variants={fadeIn} transition={{ delay: 0.2 }}
             className="text-lg md:text-xl max-w-2xl text-white/90 drop-shadow-md font-light"
           >
-            Experience premium Middle Eastern dining, authentic Yemeni spices, and unforgettable culinary moments in the heart of KL.
+            Experience premium Middle Eastern dining, authentic Yemeni spices, and unforgettable culinary moments in the heart of Kedah.
           </motion.p>
           <motion.div 
             initial="hidden" animate="visible" variants={fadeIn} transition={{ delay: 0.4 }}
@@ -198,7 +198,7 @@ export default function Home() {
                   <div className="p-3 rounded-full bg-white/10 shrink-0"><MapPin className="w-6 h-6" /></div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Location</h4>
-                    <p className="text-primary-foreground/80">294, Jln Ampang, Kampung Berembang<br/>50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+                    <p className="text-primary-foreground/80">294, Jln Ampang, Kampung Berembang<br/>50450 Kedah, Wilayah Persekutuan Kedah</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
