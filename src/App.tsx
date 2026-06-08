@@ -31,9 +31,9 @@ function Navbar() {
           </Link>
           <div className="hidden md:flex gap-6">
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('home')}</Link>
-            <Link to="/menu" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('menu')}</Link>
-            <Link to="/reservation" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('reservations')}</Link>
-            <Link to="/track" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('track_order')}</Link>
+            <a href="https://hadramawth-f58ba.web.app/order" target="_blank" rel="noreferrer" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('menu')}</a>
+            <a href="https://hadramawth-f58ba.web.app/book" target="_blank" rel="noreferrer" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('reservations')}</a>
+            <a href="https://hadramawth-f58ba.web.app/track" target="_blank" rel="noreferrer" className="text-sm font-medium hover:text-primary transition-colors tracking-wide uppercase">{t('track_order')}</a>
           </div>
         </div>
 
@@ -111,7 +111,7 @@ export default function App() {
               <div className="space-y-4 md:col-span-2">
                 <h3 className="text-2xl font-serif font-bold text-primary">Restoran Hadramawt</h3>
                 <p className="text-background/70 max-w-sm leading-relaxed">
-                  A premium dining destination in Kedah offering authentic Middle Eastern cuisine, rich Yemeni flavors, and an unforgettable atmosphere.
+                  A premium dining destination in Kuala Lumpur offering authentic Middle Eastern cuisine, rich Yemeni flavors, and an unforgettable atmosphere.
                 </p>
               </div>
               <div className="space-y-4">
@@ -134,7 +134,7 @@ export default function App() {
             </div>
             <div className="container mx-auto px-6 lg:px-12 mt-12 pt-8 border-t border-background/10 text-center text-sm text-background/50 flex flex-col md:flex-row justify-between items-center gap-4">
               <span>© {new Date().getFullYear()} Restoran Hadramawt. All rights reserved.</span>
-              <span>Made with ❤️ in Kedah</span>
+              <span>Made with ❤️ in Kuala Lumpur</span>
             </div>
           </footer>
         </div>

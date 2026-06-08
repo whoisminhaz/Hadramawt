@@ -40,7 +40,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 1 }}
             className="text-primary tracking-widest text-sm font-bold uppercase drop-shadow-md"
           >
-            Kedah, Malaysia
+            Kuala Lumpur, Malaysia
           </motion.span>
           <motion.h1 
             initial="hidden" animate="visible" variants={fadeIn}
@@ -52,22 +52,22 @@ export default function Home() {
             initial="hidden" animate="visible" variants={fadeIn} transition={{ delay: 0.2 }}
             className="text-lg md:text-xl max-w-2xl text-white/90 drop-shadow-md font-light"
           >
-            Experience premium Middle Eastern dining, authentic Yemeni spices, and unforgettable culinary moments in the heart of Kedah.
+            Experience premium Middle Eastern dining, authentic Yemeni spices, and unforgettable culinary moments in the heart of KL.
           </motion.p>
           <motion.div 
             initial="hidden" animate="visible" variants={fadeIn} transition={{ delay: 0.4 }}
             className="flex flex-wrap gap-4 pt-8 justify-center"
           >
-            <Link to="/menu">
+            <a href="https://hadramawth-f58ba.web.app/order" target="_blank" rel="noreferrer">
                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base border-none px-8 py-6 rounded-full shadow-lg shadow-primary/30 transition-transform hover:scale-105">
                  Explore Menu
                </Button>
-            </Link>
-            <Link to="/reservation">
+            </a>
+            <a href="https://hadramawth-f58ba.web.app/book" target="_blank" rel="noreferrer">
                <Button variant="outline" size="lg" className="text-base bg-white/10 hover:bg-white/20 border-white/20 text-white hover:text-white px-8 py-6 rounded-full backdrop-blur-md transition-transform hover:scale-105">
                  Reserve Table
                </Button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -121,9 +121,9 @@ export default function Home() {
               <span className="text-primary font-bold tracking-widest text-sm uppercase">Signature Offerings</span>
               <h2 className="text-4xl md:text-5xl font-serif font-bold">Curated Signatures</h2>
             </div>
-            <Link to="/menu" className="group flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors">
+            <a href="https://hadramawth-f58ba.web.app/order" target="_blank" rel="noreferrer" className="group flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors">
               View Full Menu <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -198,7 +198,7 @@ export default function Home() {
                   <div className="p-3 rounded-full bg-white/10 shrink-0"><MapPin className="w-6 h-6" /></div>
                   <div>
                     <h4 className="font-bold text-lg mb-1">Location</h4>
-                    <p className="text-primary-foreground/80">294, Jln Ampang, Kampung Berembang<br/>50450 Kedah, Wilayah Persekutuan Kedah</p>
+                    <p className="text-primary-foreground/80">294, Jln Ampang, Kampung Berembang<br/>50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
